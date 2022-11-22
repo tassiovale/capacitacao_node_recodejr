@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "e8147567-92ff-486a-a1b6-5998772c0ec6",
+		"name": "Capacitação Recode",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3265497"
+	},
+	"item": [
+		{
+			"name": "Busca de usuários",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4444/api/usuarios?nome=Pedro&email=email@email.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4444",
+					"path": [
+						"api",
+						"usuarios"
+					],
+					"query": [
+						{
+							"key": "nome",
+							"value": "Pedro"
+						},
+						{
+							"key": "email",
+							"value": "email@email.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar usuário",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"Pedro\",\n    \"email\": \"email2xw@email.com\",\n    \"cpf\": 1580501\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4444/api/usuarios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4444",
+					"path": [
+						"api",
+						"usuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar usuário",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"Tassio Valle 2\",\n    \"email\": \"tassio.vale@ufrb.edu.br\",\n    \"cpf\": 1580501\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4444/api/usuarios/3a28d9d9-e8e7-4a5f-9b07-57b24b30cc94",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4444",
+					"path": [
+						"api",
+						"usuarios",
+						"3a28d9d9-e8e7-4a5f-9b07-57b24b30cc94"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar usuário",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"Tassio Valle 2\",\n    \"email\": \"tassio.vale@ufrb.edu.br\",\n    \"cpf\": 1580501\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4444/api/usuarios/3a28d9d9-e8e7-4a5f-9b07-57b24b30cc94",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4444",
+					"path": [
+						"api",
+						"usuarios",
+						"3a28d9d9-e8e7-4a5f-9b07-57b24b30cc94"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
